@@ -102,15 +102,15 @@ form button{
 <script>
 function sendEmail(){
     Email.send({
-    Host : "smtp.googel.com",
+    Host : "smtp.google.com",
     Username : "2022senthilkumar@gmail.com",
     Password : "zxcvbn2022",
     To : '2015senthilkumar@gmail.com',
-    From :document.gerElementById("email").value,
+    From :document.getElementById("email").value,
     Subject : "This is the subject",
-    Body : Name:+ "document.gerElementById("name").value,"
-           Email: + "document.gerElementById("email").value,"
-           Maddage:+"document.gerElementById("message").value,"
+    Body : "Name:"+ "document.getElementById("name").value
+          +"<br> Email: " + "document.getElementById("email").value
+        +"<br>Massage:"+"document.getElementById("message").value
 }).then(
   message => alert(message)
 );
